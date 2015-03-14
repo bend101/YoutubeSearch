@@ -8,5 +8,8 @@ When you click on the videos image it displays the video in a iframe on the page
 
 * Uses loading on demand for the images and also loads on demand the rows when you scroll down the page.
 * Used webpack to allow use of commonjs modules and bundling into single js file.
+* 
+
+
 
 
