@@ -35,14 +35,14 @@ function App()
 
 App.prototype.logIn=function()  //logs in to youtube api
 {
-	var apiKey=localStorage.getItem("youTubeKey");
-	if(apiKey===null)
-	{
-		 apiKey=prompt("Enter your youtube api key");
-		localStorage.setItem("youTubeKey",apiKey);
-
-	}
-	gapi.client.setApiKey(apiKey);
+	//var apiKey=localStorage.getItem("youTubeKey");
+	//if(apiKey===null)
+	//{
+	//	 apiKey=prompt("Enter your youtube api key");
+	//	localStorage.setItem("youTubeKey",apiKey);
+	//
+	//}
+	gapi.client.setApiKey("AIzaSyCBOgDnhD_8OYLql5CWed9YGoO_9sQXSLw");
 	gapi.client.load('youtube', 'v3',
 		function()  //inline function added to end of the load from youtube, when logged in do what is in the function.
 		{
